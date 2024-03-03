@@ -10,12 +10,19 @@
             height: 150px;
         }
 
+        .large-text {
+            font-size: 45px;
+        }
+
         h1,
         h2{
             text-align:center;
         }
         h3{
             text-align:center;
+        }
+        table{
+            margin: 0 auto; /* This centers the table */
         }
     </style>
 </head>
@@ -61,6 +68,90 @@
         <p>
             Also, this is my first time doing a website (again, obviously), and I'm looking forward to learn more :)
         </p>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/O7zvj9GHg8M?si=1QhgwUxS2Gs3KEdS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </p>
+        <p>
+            Select an option: 
+            <select>
+                <option>
+                    The video worked :)
+                </option>
+                <option>
+                    The video didn't work :(
+                </option>
+            </select>
+        </p>
+        <p>
+            If you selected "The video didn't work :(" please click here:
+        </p>
+        <p>
+            <a href="https://www.youtube.com/watch?v=jJlpvF738II">Link</a> 
+        </p>
+        <p class="large-text">
+            Time for table
+        </p>
+        <p>
+            <table border="1">
+                <tr>
+                    <th> Very Important  </th>
+                    <th> Important  </th>
+                    <th> Not So Important </th>
+                </tr>
+                <tr>
+                    <td> food </td>
+                    <td> hungry </td>
+                    <td> work </td>
+                </tr>
+            </table>
+        </p>
+        <p class="large-text">
+            The End of Table
+        </p>
+        <p>
+            <label for="checkbox">It was a good table, I agree with it</label>
+    <input type="checkbox" id="checkbox1" name="checkbox">
+        </p>
+        <p>
+            <label for="checkbox">It was a bad table, I don't agree with it</label>
+    <input type="checkbox" id="checkbox2" name="checkbox">
+        </p>
+
+        
+        <audio id="annoyingSound">
+            <source src="y2mate.com - NO GOD PLEASE NO NOOOOOOOOOO.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <script>
+            document.getElementById("checkbox2").addEventListener("change", function() {
+                var audio = document.getElementById("annoyingSound");
+                if (this.checked) {
+                    audio.play(); // Play the annoying sound
+                } else {
+                    audio.pause(); // Pause the sound if checkbox is unchecked
+                    audio.currentTime = 0; // Rewind the audio to the beginning
+                }
+            });
+        </script>
+
+        <audio id="GoodSound">
+            <source src="happy happy happy.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <script>
+            document.getElementById("checkbox1").addEventListener("change", function() {
+                var audio = document.getElementById("GoodSound");
+                if (this.checked) {
+                    audio.play(); // Play the annoying sound
+                } else {
+                    audio.pause(); // Pause the sound if checkbox is unchecked
+                    audio.currentTime = 0; // Rewind the audio to the beginning
+                }
+            });
+        </script>
+
     </div>
     </h3>
 </body>
