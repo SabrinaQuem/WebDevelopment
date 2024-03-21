@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first humble site</title>
     <style>
+        
         #myImage {
             width: 200px;
             height: 150px;
@@ -23,6 +24,17 @@
             text-align:center;
         }
 
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column{
+            flex: 1;
+            margin: 0 10px;
+            text-align: center;
+        }
+
         table{
             margin: 0 auto; /* This centers the table */
         }
@@ -34,12 +46,14 @@
     </style>
 </head>
 <body bgcolor="#D2691E">
-    <h1>
-        My First Humble Website
-    </h1>
-    <h2>
-        I don't really know what i can do here!
-    </h2>
+    <div>
+        <h1>
+            My First Humble Website
+        </h1>
+        <h2>
+            I don't really know what i can do here!
+        </h2>
+    </div>
     <h3>
     <div>
         <p>
@@ -160,6 +174,26 @@
         </script>
 
     </div>
+
     </h3>
+    <h4>
+        <div class="container">
+            <div class="column">
+                <p>
+                    Teste de Coluna...Teste de Coluna...Teste de Coluna...Teste de Coluna...Teste de Coluna...Teste de Coluna...Teste de Coluna...Teste de Coluna...Teste de Coluna...Teste de Coluna...Teste de Coluna...Teste de Coluna...Teste de Coluna...Teste de Coluna...
+                </p>
+            </div>
+            <div class="column">
+                <p>
+                    Parece funcionar...Parece funcionar...Parece funcionar...Parece funcionar...Parece funcionar...Parece funcionar...Parece funcionar...Parece funcionar...Parece funcionar...Parece funcionar...Parece funcionar...Parece funcionar...Parece funcionar...
+                </p>
+            </div>
+            <div class="column">
+                <p>
+                    Soy una bela coluna...Soy una bela coluna...Soy una bela coluna...Soy una bela coluna...Soy una bela coluna...Soy una bela coluna...Soy una bela coluna...Soy una bela coluna...Soy una bela coluna...Soy una bela coluna...Soy una bela coluna...
+                </p>
+            </div>
+        </div>
+    </h4>
 </body>
 </html>
